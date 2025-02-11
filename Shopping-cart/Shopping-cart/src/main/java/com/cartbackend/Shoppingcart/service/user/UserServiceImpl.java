@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
             user.setFirstName(request.getFirstName());
             user.setLastName(request.getLastName());
             return userRepository.save(user);
-        }).orElseThrow(()->new AlreadyExistException("user not found"));
+        }).orElseThrow(()->new AlreadyExistException("Oops!" +request.getEmail() + "already exists"));
     }
 
     @Override
@@ -53,6 +53,7 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public UserDto convertUserToDto(User user){
+
         return modelMapper.map(user,UserDto.class);
     }
 }
