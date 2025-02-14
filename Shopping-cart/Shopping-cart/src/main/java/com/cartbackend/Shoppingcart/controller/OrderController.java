@@ -19,7 +19,7 @@ public class OrderController {
     private OrderServiceImpl orderService;
 
     @PostMapping(value = "/order")
-    public ResponseEntity<ApiResponse> createOrder(@RequestParam Long userId){
+    public ResponseEntity<ApiResponse> createOrder(@RequestParam("userId") Long userId){
         try {
             Order order = (Order) orderService.placeOrder(userId);
             return ResponseEntity.ok(new ApiResponse("Order placed success",order));
