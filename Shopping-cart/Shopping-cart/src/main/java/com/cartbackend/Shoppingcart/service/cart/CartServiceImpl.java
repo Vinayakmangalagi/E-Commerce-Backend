@@ -2,6 +2,7 @@ package com.cartbackend.Shoppingcart.service.cart;
 
 import com.cartbackend.Shoppingcart.exception.ResourceNotFoundException;
 import com.cartbackend.Shoppingcart.model.Cart;
+import com.cartbackend.Shoppingcart.model.User;
 import com.cartbackend.Shoppingcart.repository.CartItemRepository;
 import com.cartbackend.Shoppingcart.repository.CartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Service
@@ -55,11 +57,13 @@ public class CartServiceImpl implements CartService{
     }
 
     @Override
-    public Long initializeNewCart(){
-        Cart newCart = new Cart();
-        Long newCartId = cartIdGenerator.incrementAndGet();
-        newCart.setId(newCartId);
-        return cartRepository.save(newCart).getId();
+    public Cart initializeNewCart(User user){
+        return Optional.ofNullable(getCartByUserId(user.getId()))
+                .orElseGet(()-> {
+                    Cart cart = new Cart();
+                  cart.setUser(user);
+                    return cartRepository.save(cart);
+                });
     }
 
     @Override

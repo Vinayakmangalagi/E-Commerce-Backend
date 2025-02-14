@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccfa5afb-47ea-419a-962c-df7850c53640" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/.idea/Shopping-cart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/.idea/Shopping-cart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/dto/CartItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/dto/CartItemDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/dto/OrderItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/dto/OrderItemDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/exception/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/exception/ProductNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/repository/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/test/java/com/cartbackend/Shoppingcart/ShoppingCartApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/test/java/com/cartbackend/Shoppingcart/ShoppingCartApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/controller/CartItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/controller/CartItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/service/cart/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/service/cart/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/service/cart/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-cart/Shopping-cart/src/main/java/com/cartbackend/Shoppingcart/service/cart/CartServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

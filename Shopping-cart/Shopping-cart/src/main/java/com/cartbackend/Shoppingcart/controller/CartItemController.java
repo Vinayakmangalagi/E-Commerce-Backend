@@ -1,9 +1,12 @@
 package com.cartbackend.Shoppingcart.controller;
 
 import com.cartbackend.Shoppingcart.exception.ResourceNotFoundException;
+import com.cartbackend.Shoppingcart.model.Cart;
+import com.cartbackend.Shoppingcart.model.User;
 import com.cartbackend.Shoppingcart.response.ApiResponse;
 import com.cartbackend.Shoppingcart.service.cart.CartItemService;
 import com.cartbackend.Shoppingcart.service.cart.CartService;
+import com.cartbackend.Shoppingcart.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,13 +20,15 @@ public class CartItemController {
     private CartItemService cartItemService;
     @Autowired
     private CartService cartService;
+    @Autowired
+    private UserService userService;
 
     @PostMapping(value = "/item/add")
     public ResponseEntity<ApiResponse> addItemToCart(@RequestParam(required = false) Long cartId,@RequestParam Long productId,@RequestParam Integer quantity){
         try {
-            if (cartId == null){
-             cartId = cartService.initializeNewCart();
-            }
+              User user = userService.getUserById(1L);
+            Cart cartId = cartService.initializeNewCart(user);
+
             cartItemService.addItemToCart(cartId,productId,quantity);
             return ResponseEntity.ok(new ApiResponse("Add item success",null));
         } catch (ResourceNotFoundException e) {
